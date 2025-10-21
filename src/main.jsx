@@ -1,3 +1,4 @@
+// src/main.jsx
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
@@ -7,6 +8,10 @@ import NewWorkout from './pages/NewWorkout.jsx'
 import History from './pages/History.jsx'
 import Settings from './pages/Settings.jsx'
 import './styles.css'
+
+// ⬇️ добавь это:
+import { registerSW } from 'virtual:pwa-register'
+registerSW({ immediate: true }) // автообновления sw
 
 const root = createRoot(document.getElementById('root'))
 root.render(
