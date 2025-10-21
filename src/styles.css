@@ -187,7 +187,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -195,7 +196,7 @@ select {
   background: #0f1532;
   color: #e7ecf7;
   min-height: 44px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .table-responsive {
