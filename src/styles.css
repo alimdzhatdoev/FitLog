@@ -293,6 +293,20 @@ td {
   margin-top: 10px;
 }
 
+details summary {
+  color: #b9c6ff;
+  font-weight: 600;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .content {
     padding: 12px;
