@@ -13,6 +13,13 @@ import './styles.css'
 import { registerSW } from 'virtual:pwa-register'
 registerSW({ immediate: true }) // автообновления sw
 
+function setVh() {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+}
+setVh()
+window.addEventListener('resize', setVh)
+window.addEventListener('orientationchange', setVh)
+
 const root = createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
