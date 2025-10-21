@@ -28,7 +28,7 @@ export function MultiLineChart({ title, labels, datasets }) {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { labels: { color: axis } },
+      legend: { display: false },
       tooltip: { enabled: true },
       title: { display: !!title, text: title, color: axis },
     },

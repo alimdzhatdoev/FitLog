@@ -121,7 +121,7 @@ export default function Dashboard() {
                     checked={selected.includes(ex)}
                     onChange={() => toggleExercise(ex)}
                     style={{
-                      width: "16px"
+                      width: "14px"
                     }}
                   />
                   {ex}
