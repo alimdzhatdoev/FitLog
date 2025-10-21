@@ -80,7 +80,7 @@ body {
   background: #0c1333;
   border-bottom: 1px solid #222b55;
   /* ✅ если меню прижато к самому верху */
-  padding: calc(10px + var(--sat)) 14px 10px;
+  padding: 14px 10px;
 }
 
 .nav-mobile a {
